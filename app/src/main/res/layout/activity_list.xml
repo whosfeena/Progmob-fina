@@ -9,15 +9,16 @@
 
     <ListView
         android:id="@+id/lvLatihan"
-        android:layout_width="406dp"
-        android:layout_height="642dp"
+        android:layout_width="410dp"
+        android:layout_height="437dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinnerLatihan"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

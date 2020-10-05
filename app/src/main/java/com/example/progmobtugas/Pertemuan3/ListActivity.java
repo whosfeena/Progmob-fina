@@ -29,7 +29,7 @@ public class ListActivity extends AppCompatActivity {
 
         //adapter digunakan untuk menghubungkan data dengan ui nya
         lv.setAdapter(new ArrayAdapter<String>(ListActivity.this,android.R.layout.simple_list_item_1,items));
-        ArrayAdapter<String> aa  = new ArrayAdapter<String>(ListActivity.this,android.R.layout.simple_spinner_item);
+        ArrayAdapter<String> aa  = new ArrayAdapter<String>(ListActivity.this,android.R.layout.simple_spinner_item,items);
         sp.setAdapter(aa);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
