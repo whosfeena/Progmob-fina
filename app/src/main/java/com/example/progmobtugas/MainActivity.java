@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.progmobtugas.Pertemuan3.ListActivity;
-import com.example.progmobtugas.Pertemuan3.RecyclerActivity;
+import com.example.progmobtugas.Model.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnList = (Button) findViewById(R.id.btnListView);
         Button btnRecycler = (Button) findViewById(R.id.btnRecyclerView);
         Button btnCard = (Button) findViewById(R.id.btnCardView);
+
 
         //action
         txtView.setText(R.string.text_hello_world);
@@ -78,5 +79,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }

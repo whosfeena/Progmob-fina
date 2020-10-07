@@ -1,4 +1,4 @@
-package com.example.progmobtugas.Pertemuan3;
+package com.example.progmobtugas.Model;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.progmobtugas.Adapter.MahasiswaRecycleAdapter;
-import com.example.progmobtugas.Model.Mahasiswa;
 import com.example.progmobtugas.R;
 
 import java.util.ArrayList;
