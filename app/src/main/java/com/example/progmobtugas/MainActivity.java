@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.progmobtugas.Pertemuan3.ListActivity;
+import com.example.progmobtugas.Pertemuan3.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
                 startActivity(intent);
             }
         });
