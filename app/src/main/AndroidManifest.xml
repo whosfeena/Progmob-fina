@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Model.CardViewTestActivity"></activity>
         <activity android:name=".Model.RecyclerActivity" />
+        <activity android:name=".Pertemuan4.DebuggingActivity" />
         <activity android:name=".Pertemuan3.ListActivity" />
         <activity android:name=".ProteinTracker" />
         <activity android:name=".HelpActivity" />

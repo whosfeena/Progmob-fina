@@ -10,8 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.progmobtugas.Model.CardViewTestActivity;
+import com.example.progmobtugas.Model.MahasiswaDebugging;
 import com.example.progmobtugas.Pertemuan3.ListActivity;
 import com.example.progmobtugas.Model.RecyclerActivity;
+import com.example.progmobtugas.Pertemuan4.DebuggingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -89,8 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnDeb.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { 
-
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DebuggingActivity.class);
+                startActivity(intent);
             }
         });
 

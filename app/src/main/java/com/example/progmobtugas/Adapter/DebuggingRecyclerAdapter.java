@@ -1,4 +1,4 @@
-package ukdw.com.progmob_2020.Adapter;
+package com.example.progmobtugas.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,10 +7,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.progmobtugas.Model.Mahasiswa;
+import com.example.progmobtugas.R;
+
 import java.util.ArrayList;
 import java.util.List;
-import ukdw.com.progmob_2020.Model.Mahasiswa;
-import ukdw.com.progmob_2020.R;
+
 
 public class DebuggingRecyclerAdapter extends RecyclerView.Adapter<DebuggingRecyclerAdapter.ViewHolder> {
     private Context context;
@@ -33,7 +36,7 @@ public class DebuggingRecyclerAdapter extends RecyclerView.Adapter<DebuggingRecy
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.item_list_cardview,parent,false);
+        View v = LayoutInflater.from(context).inflate(R.layout.item_list_debugging,parent,false);
         return new ViewHolder(v);
     }
 
@@ -42,7 +45,7 @@ public class DebuggingRecyclerAdapter extends RecyclerView.Adapter<DebuggingRecy
         Mahasiswa m = mahasiswaList.get(position);
 
         holder.tvNama.setText(m.getNama());
-        holder.tvNoTelp.setText(m.getNotelp());
+        holder.tvNoTelp.setText(m.getNoTelp());
         holder.tvNim.setText(m.getNim());
     }
 

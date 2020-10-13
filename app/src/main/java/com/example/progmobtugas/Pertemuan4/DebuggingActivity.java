@@ -1,4 +1,4 @@
-package ukdw.com.progmob_2020.Pertemuan4;
+package com.example.progmobtugas.Pertemuan4;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,10 +9,10 @@ import android.os.Bundle;
 import java.util.ArrayList;
 import java.util.List;
 
-import ukdw.com.progmob_2020.Adapter.MahasiswaRecyclerAdapter;
-import ukdw.com.progmob_2020.Model.Mahasiswa;
-import ukdw.com.progmob_2020.Pertemuan2.RecyclerActivity;
-import ukdw.com.progmob_2020.R;
+import com.example.progmobtugas.Adapter.MahasiswaRecycleAdapter;
+import com.example.progmobtugas.Model.Mahasiswa;
+import com.example.progmobtugas.Model.RecyclerActivity;
+import com.example.progmobtugas.R;
 
 public class DebuggingActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class DebuggingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_debugging);
 
         RecyclerView rv = (RecyclerView)findViewById(R.id.rvLatihan);
-        MahasiswaRecyclerAdapter mahasiswaRecyclerAdapter;
+        MahasiswaRecycleAdapter mahasiswaRecyclerAdapter;
 
         //data dummy
         List<Mahasiswa> mahasiswaList = new ArrayList<Mahasiswa>();
@@ -40,10 +40,10 @@ public class DebuggingActivity extends AppCompatActivity {
         mahasiswaList.add(m4);
         mahasiswaList.add(m5);
 
-        List<Mahasiswa> mahasiswaListDebug = new ArrayList<Mahasiswa>();
+        //List<Mahasiswa> mahasiswaListDebug = new ArrayList<Mahasiswa>();
         
-        mahasiswaRecyclerAdapter = new MahasiswaRecyclerAdapter(DebuggingActivity.this);
-        mahasiswaRecyclerAdapter.setMahasiswaList(mahasiswaListDebug);
+        mahasiswaRecyclerAdapter = new MahasiswaRecycleAdapter(DebuggingActivity.this);
+        mahasiswaRecyclerAdapter.setMahasiswaList(mahasiswaList);
 
         rv.setLayoutManager(new LinearLayoutManager(DebuggingActivity.this));
         rv.setAdapter(mahasiswaRecyclerAdapter);

@@ -1,4 +1,4 @@
-package ukdw.com.progmob_2020.Model;
+package com.example.progmobtugas.Model;
 
 public class MahasiswaDebugging {
     private String nama;
