@@ -26,11 +26,10 @@ public class MainActivity extends AppCompatActivity {
         final EditText myEditText = (EditText) findViewById(R.id.editText1);
         Button btnHelp = (Button) findViewById(R.id.btnHelp);
         Button btnTracker = (Button) findViewById(R.id.btnTracker);
-
-        //Variable pertemuan2
         Button btnList = (Button) findViewById(R.id.btnListView);
         Button btnRecycler = (Button) findViewById(R.id.btnRecyclerView);
         Button btnCard = (Button) findViewById(R.id.btnCardView);
+        Button btnDeb = (Button)findViewById(R.id.btnDeb);
 
 
         //action
@@ -85,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, CardViewTestActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btnDeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { 
+
             }
         });
 
