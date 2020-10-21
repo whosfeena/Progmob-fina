@@ -11,7 +11,6 @@ import java.util.List;
 
 import com.example.progmobtugas.Adapter.MahasiswaRecycleAdapter;
 import com.example.progmobtugas.Model.Mahasiswa;
-import com.example.progmobtugas.Model.RecyclerActivity;
 import com.example.progmobtugas.R;
 
 public class DebuggingActivity extends AppCompatActivity {

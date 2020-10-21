@@ -42,7 +42,7 @@ public class MahasiswaCRUDRecyclerAdapter extends RecyclerView.Adapter<Mahasiswa
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.item_list_recycler,parent,false);
+        View v = LayoutInflater.from(context).inflate(R.layout.item_list_cardview,parent,false);
         return new ViewHolder(v);
 
     }
