@@ -53,13 +53,13 @@ public class MahasiswaAddActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<DefaultResult> call, Response<DefaultResult> response) {
                         pd.dismiss();
-                        Toast.makeText(MahasiswaAddActivity.this, "Berhasil Disimpan!", Toast.LENGTH_LONG);
+                        Toast.makeText(MahasiswaAddActivity.this, "Berhasil Disimpan!", Toast.LENGTH_LONG).show();
                     }
 
                     @Override
                     public void onFailure(Call<DefaultResult> call, Throwable t) {
-
-                        Toast.makeText(MahasiswaAddActivity.this, "GAGAL!", Toast.LENGTH_LONG);
+                        pd.dismiss();
+                        Toast.makeText(MahasiswaAddActivity.this, "GAGAL!", Toast.LENGTH_LONG).show();
                     }
                 });
 
