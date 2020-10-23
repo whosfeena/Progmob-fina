@@ -26,10 +26,10 @@ public class MahasiswaAddActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mahasiswa_add);
 
-        EditText edNama = (EditText)findViewById(R.id.editTextNama);
-        EditText edNim = (EditText)findViewById(R.id.editTextNim);
-        EditText edAlamat = (EditText)findViewById(R.id.editTextAlamat);
-        EditText edEmail = (EditText)findViewById(R.id.editTextEmail);
+        EditText editTextNama = (EditText)findViewById(R.id.editTextNama);
+        EditText editTextNim = (EditText)findViewById(R.id.editTextNim);
+        EditText editTextAlamat = (EditText)findViewById(R.id.editTextAlamat);
+        EditText editTextEmail = (EditText)findViewById(R.id.editTextEmail);
         Button btnSimpan = (Button)findViewById(R.id.btnSimpan);
         pd = new ProgressDialog(MahasiswaAddActivity.this);
 
@@ -41,10 +41,10 @@ public class MahasiswaAddActivity extends AppCompatActivity {
 
                 GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
                 Call<DefaultResult> call = service.add_mhs(
-                        edNama.getText().toString(),
-                        edNim.getText().toString(),
-                        edAlamat.getText().toString(),
-                        edEmail.getText().toString(),
+                        editTextNama.getText().toString(),
+                        editTextNim.getText().toString(),
+                        editTextAlamat.getText().toString(),
+                        editTextEmail.getText().toString(),
                         "Kosongkan aja soalnya sembarang dirandom sistem",
                         "72180188"
                 );

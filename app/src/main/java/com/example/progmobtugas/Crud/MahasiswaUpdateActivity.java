@@ -46,6 +46,15 @@ public class MahasiswaUpdateActivity extends AppCompatActivity {
                         "72180188"
 
                 );
+                GetDataService services = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
+                Call<DefaultResult> call = services.update_mhs(
+                        upNama.getText().toString(),
+                        upNim.getText().toString(),
+                        upAlamat.getText().toString(),
+                        upEmail.getText().toString(),
+                        "Kosongkan aja soalnya sembarang dirandom sistem",
+                        "72180188"
+                );
 
                 del.enqueue(new Callback<DefaultResult>() {
                     @Override
