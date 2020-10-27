@@ -12,18 +12,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Crud.MahasiswaUpdateActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pertemuan6.PrefActivity" />
+        <activity android:name=".Crud.MahasiswaUpdateActivity" />
         <activity android:name=".Crud.MahasiswaGetAllActivity" />
         <activity android:name=".Crud.MahasiswaAddActivity" />
         <activity android:name=".Crud.HapusMhsActivity" />
         <activity
             android:name=".Crud.MainMhsActivity"
             android:label="Menu CRUD Mahasiswi">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Model.CardViewTestActivity" />
         <activity android:name=".Model.RecyclerActivity" />
