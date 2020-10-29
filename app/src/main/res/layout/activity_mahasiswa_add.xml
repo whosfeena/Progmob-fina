@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Crud.MahasiswaAddActivity">
+    tools:context=".CrudMhs.MahasiswaAddActivity">
 
     <EditText
         android:id="@+id/editTextEmail"
@@ -12,8 +12,8 @@
         android:layout_height="36dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Masukkan Email "
         android:inputType="textPersonName"
-        android:text="@string/email"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -26,8 +26,8 @@
         android:layout_height="36dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Masukkan Alamat"
         android:inputType="textPersonName"
-        android:text="@string/alamat"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -39,8 +39,8 @@
         android:layout_width="0dp"
         android:layout_height="36dp"
         android:ems="10"
+        android:hint="Masukkan Nama Mahasiswa"
         android:inputType="textPersonName"
-        android:text="@string/nama"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.168"
@@ -53,8 +53,8 @@
         android:layout_height="36dp"
         android:layout_marginTop="8dp"
         android:ems="10"
+        android:hint="Masukkan NIM Mahasiswa"
         android:inputType="textPersonName"
-        android:text="@string/nim"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

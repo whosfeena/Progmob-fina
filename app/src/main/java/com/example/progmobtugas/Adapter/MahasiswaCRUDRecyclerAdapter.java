@@ -1,6 +1,7 @@
 package com.example.progmobtugas.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.progmobtugas.CrudMhs.MahasiswaUpdateActivity;
 import com.example.progmobtugas.Model.Mahasiswa;
 import com.example.progmobtugas.R;
 
@@ -47,20 +49,31 @@ public class MahasiswaCRUDRecyclerAdapter extends RecyclerView.Adapter<Mahasiswa
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list_cardview,parent,false);
-        return new ViewHolder(v);
+        return new ViewHolder(v,parent.getContext());
 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         private TextView tvNama, tvNim, tvAlamat, tvEmail;
+        Mahasiswa mhs;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView,Context context) {
             super(itemView);
             tvNama = itemView.findViewById(R.id.tvNama);
             tvNim = itemView.findViewById(R.id.tvNim);
             tvAlamat = itemView.findViewById(R.id.tvAlamat);
             tvEmail = itemView.findViewById(R.id.tvEmail);
-            //tvNoTelp = itemView.findViewById(R.id.tvNoTelp);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent UpInput =new Intent(context, MahasiswaUpdateActivity.class);
+                    UpInput.putExtra("nim",mhs.getNim());
+                    UpInput.putExtra("nama",mhs.getNama());
+                    UpInput.putExtra("alamat",mhs.getAlamat());
+                    UpInput.putExtra("email",mhs.getEmail());
+                    context.startActivity(UpInput);
+                }
+            });
         }
     }
     @Override
@@ -71,6 +84,8 @@ public class MahasiswaCRUDRecyclerAdapter extends RecyclerView.Adapter<Mahasiswa
         holder.tvNim.setText(m.getNim());
         holder.tvAlamat.setText(m.getAlamat());
         holder.tvEmail.setText(m.getEmail());
-        //holder.tvNoTelp.setText(m.getNoTelp());
+        holder.mhs=m;
     }
+
+
 }

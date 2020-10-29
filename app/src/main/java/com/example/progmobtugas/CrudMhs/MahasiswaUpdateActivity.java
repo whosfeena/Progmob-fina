@@ -1,8 +1,9 @@
-package com.example.progmobtugas.Crud;
+package com.example.progmobtugas.CrudMhs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,16 @@ public class MahasiswaUpdateActivity extends AppCompatActivity {
         final EditText upEmail = (EditText)findViewById(R.id.upEmail);
         Button btnUpdt = (Button) findViewById(R.id.btnUpdt);
         pd = new ProgressDialog(MahasiswaUpdateActivity.this);
+        Intent data = getIntent(); //
+        if (data!=null){
+            upNimLama.setText(data.getStringExtra("nim"));
+            upNama.setText(data.getStringExtra("nama"));
+            upNim.setText(data.getStringExtra("nim"));
+            upAlamat.setText(data.getStringExtra("alamat"));
+            upEmail.setText(data.getStringExtra("email"));
+        }
+
+
 
         btnUpdt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +94,8 @@ public class MahasiswaUpdateActivity extends AppCompatActivity {
                     public void onResponse(Call<DefaultResult> call, Response<DefaultResult> response) {
                         pd.dismiss();
                         Toast.makeText(MahasiswaUpdateActivity.this,"Berhasil disimpan",Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(MahasiswaUpdateActivity.this, MahasiswaGetAllActivity.class);
+                        startActivity(intent);
 
                     }
 

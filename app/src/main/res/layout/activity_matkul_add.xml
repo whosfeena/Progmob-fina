@@ -4,40 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrudMhs.MahasiswaUpdateActivity">
+    tools:context=".CrudMatKul.MatkulAddActivity">
 
     <EditText
-        android:id="@+id/upEmail"
+        android:id="@+id/txtKodeMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan Email"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upAlamat" />
-
-    <EditText
-        android:id="@+id/upAlamat"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukkan Alamat"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNim" />
-
-    <EditText
-        android:id="@+id/upNimLama"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukkan NIM Mahasiswa yang akan di Update"
+        android:hint="Masukkan Kode Matakuliah"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,42 +19,60 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/upNama"
+        android:id="@+id/txtNamaMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan Nama"
+        android:hint="Masukkan Nama Matakuliah"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNimLama" />
+        app:layout_constraintTop_toBottomOf="@+id/txtKodeMatkul" />
 
     <EditText
-        android:id="@+id/upNim"
+        android:id="@+id/txtHari"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan NIM"
+        android:hint="Masukkan Hari"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNama" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNamaMatkul" />
 
-    <Button
-        android:id="@+id/btnUpdt"
+    <EditText
+        android:id="@+id/txtSesi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="UPDATE"
+        android:ems="10"
+        android:hint="Masukkan Sesi"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtHari" />
 
+    <EditText
+        android:id="@+id/txtSks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan SKS"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSesi" />
+
+    <Button
+        android:id="@+id/btnSimpanMatkul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="SIMPAN"
+        app:layout_constraintEnd_toEndOf="@+id/txtKodeMatkul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSks" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".CrudMatKul.HapusMatkulActivity" />
+        <activity android:name=".CrudMatKul.MatkulUpdateActivity" />
+        <activity android:name=".CrudMatKul.MatkulGetAllActivity" />
+        <activity android:name=".CrudMatKul.MatkulAddActivity" />
+        <activity android:name=".CrudMatKul.MainMatkulActivity" />
+        <activity android:name=".CrudDosen.DosenUpdateActivity" />
+        <activity android:name=".MenuUtamaActivity" />
+        <activity android:name=".CrudDosen.HapusDosenActivity" />
+        <activity android:name=".CrudDosen.DosenAddActivity" />
+        <activity android:name=".CrudDosen.DosenGetAllActivity" />
+        <activity android:name=".CrudDosen.MainDosenActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,15 +32,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Pertemuan6.PrefActivity" />
-        <activity android:name=".Crud.MahasiswaUpdateActivity" />
-        <activity android:name=".Crud.MahasiswaGetAllActivity" />
-        <activity android:name=".Crud.MahasiswaAddActivity" />
-        <activity android:name=".Crud.HapusMhsActivity" />
+        <activity android:name=".CrudMhs.MahasiswaUpdateActivity" />
+        <activity android:name=".CrudMhs.MahasiswaGetAllActivity" />
+        <activity android:name=".CrudMhs.MahasiswaAddActivity" />
+        <activity android:name=".CrudMhs.HapusMhsActivity" />
         <activity
-            android:name=".Crud.MainMhsActivity"
-            android:label="Menu CRUD Mahasiswi">
-
-        </activity>
+            android:name=".CrudMhs.MainMhsActivity"
+            android:label="Menu CRUD Mahasiswi" />
         <activity android:name=".Model.CardViewTestActivity" />
         <activity android:name=".Model.RecyclerActivity" />
         <activity android:name=".Pertemuan4.DebuggingActivity" />

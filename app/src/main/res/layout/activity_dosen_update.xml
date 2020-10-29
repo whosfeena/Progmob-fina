@@ -4,23 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrudMhs.MahasiswaUpdateActivity">
+    tools:context=".CrudDosen.DosenUpdateActivity">
 
     <EditText
-        android:id="@+id/upEmail"
+        android:id="@+id/upNidnCari"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan Email"
+        android:hint="Masukkan NIDN Yang Akan Di Update"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/upNamaDosen"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/upNamaDosen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Nama Dosen"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upAlamat" />
+        app:layout_constraintTop_toBottomOf="@+id/upNidnCari" />
 
     <EditText
-        android:id="@+id/upAlamat"
+        android:id="@+id/upNidn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Nidn Dosen"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/upNamaDosen"
+        app:layout_constraintStart_toStartOf="@+id/upNamaDosen"
+        app:layout_constraintTop_toBottomOf="@+id/upNamaDosen" />
+
+    <EditText
+        android:id="@+id/upAlamatDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -28,59 +50,41 @@
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNim" />
+        app:layout_constraintTop_toBottomOf="@+id/upNidn" />
 
     <EditText
-        android:id="@+id/upNimLama"
+        android:id="@+id/upEmailDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan NIM Mahasiswa yang akan di Update"
+        android:hint="Masukkan Email Dosen"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/upAlamatDosen" />
 
     <EditText
-        android:id="@+id/upNama"
+        android:id="@+id/upGelar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan Nama"
+        android:hint="Masukkan Gelar Dosen"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNimLama" />
-
-    <EditText
-        android:id="@+id/upNim"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukkan NIM"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNama" />
+        app:layout_constraintTop_toBottomOf="@+id/upEmailDosen" />
 
     <Button
-        android:id="@+id/btnUpdt"
+        android:id="@+id/btnUpdateDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="UPDATE"
+        android:layout_marginTop="24dp"
+        android:text="UPDATE DATA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upEmail" />
-
+        app:layout_constraintTop_toBottomOf="@+id/upGelar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

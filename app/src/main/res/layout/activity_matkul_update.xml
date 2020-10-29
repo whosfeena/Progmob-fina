@@ -4,40 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrudMhs.MahasiswaUpdateActivity">
+    tools:context=".CrudMatKul.MatkulUpdateActivity">
 
     <EditText
-        android:id="@+id/upEmail"
+        android:id="@+id/txtKodeCari"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan Email"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upAlamat" />
-
-    <EditText
-        android:id="@+id/upAlamat"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukkan Alamat"
-        android:inputType="textPersonName"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNim" />
-
-    <EditText
-        android:id="@+id/upNimLama"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Masukkan NIM Mahasiswa yang akan di Update"
+        android:hint="Masukkan Kode Matakuliah yang akan di Hapus"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,42 +19,72 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/upNama"
+        android:id="@+id/updateKodeMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan Nama"
+        android:hint="Masukkan Kode Matakuliah"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNimLama" />
+        app:layout_constraintTop_toBottomOf="@+id/txtKodeCari" />
 
     <EditText
-        android:id="@+id/upNim"
+        android:id="@+id/updateNamaMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Masukkan NIM"
+        android:hint="Masukkan Nama Matakuliah"
         android:inputType="textPersonName"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upNama" />
+        app:layout_constraintTop_toBottomOf="@+id/updateKodeMatkul" />
 
-    <Button
-        android:id="@+id/btnUpdt"
+    <EditText
+        android:id="@+id/updateHari"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="UPDATE"
+        android:ems="10"
+        android:hint="Masukkan Hari"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/updateNamaMatkul" />
 
+    <EditText
+        android:id="@+id/updateSesi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Sesi"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateHari" />
+
+    <EditText
+        android:id="@+id/updateSks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan SKS"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateSesi" />
+
+    <Button
+        android:id="@+id/btnUpdateMatkul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="UPDATE DATA "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateSks" />
 </androidx.constraintlayout.widget.ConstraintLayout>

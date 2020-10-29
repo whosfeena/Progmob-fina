@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrudMhs.MainMhsActivity">
+    tools:context=".CrudMatKul.MainMatkulActivity">
 
     <TextView
-        android:id="@+id/txtUpdateMhs"
+        android:id="@+id/txtUpdateMatkul"
         android:layout_width="373dp"
         android:layout_height="67dp"
         android:layout_marginTop="24dp"
@@ -16,45 +16,35 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGetMhs" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDelMatkul" />
 
     <Button
-        android:id="@+id/btnGetMhs"
+        android:id="@+id/btnGetMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="290dp"
-        android:text="Lihat Mahasiswa"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnDel"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="HAPUS MAHASISWA"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGetMhs"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnAddMhs"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="TAMBAH DATA MAHASISWA"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnDel"
+        android:text="LIHAT DATA MATAKULIAH"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddMatkul"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAddMatkul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH DATA MATAKULIAH"
+        app:layout_constraintBottom_toTopOf="@+id/btnDelMatkul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDelMatkul"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="290dp"
+        android:text="HAPUS DATA MATAKULIAH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

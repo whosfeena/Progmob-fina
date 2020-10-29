@@ -1,8 +1,9 @@
-package com.example.progmobtugas.Crud;
+package com.example.progmobtugas.CrudMhs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -54,6 +55,8 @@ public class MahasiswaAddActivity extends AppCompatActivity {
                     public void onResponse(Call<DefaultResult> call, Response<DefaultResult> response) {
                         pd.dismiss();
                         Toast.makeText(MahasiswaAddActivity.this, "Berhasil Disimpan!", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(MahasiswaAddActivity.this, MahasiswaGetAllActivity.class);
+                        startActivity(intent);
                     }
 
                     @Override

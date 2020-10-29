@@ -5,6 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.progmobtugas.CrudDosen.MainDosenActivity;
+import com.example.progmobtugas.CrudMhs.MainMhsActivity;
+import com.example.progmobtugas.Model.Login;
+import com.example.progmobtugas.Pertemuan6.PrefActivity;
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {
-                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this, LoginActivity.class));
                     finish();
                 }
             }

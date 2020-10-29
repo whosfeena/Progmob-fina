@@ -1,4 +1,4 @@
-package com.example.progmobtugas.Crud;
+package com.example.progmobtugas.CrudMhs;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;

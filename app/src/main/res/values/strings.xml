@@ -5,4 +5,5 @@
     <string name="nim">Nim</string>
     <string name="alamat">Alamat</string>
     <string name="email">Email</string>
+    <string name="nidn">Nidn</string>
 </resources>

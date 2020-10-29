@@ -4,39 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pertemuan6.PrefActivity">
+    tools:context=".MenuUtamaActivity">
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnMahasiswa"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:text="LOGIN"
+        android:layout_marginTop="256dp"
+        android:text="Menu Mahasiswa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txtNimLogin"
+    <Button
+        android:id="@+id/btnDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="170dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:text="MENU DOSEN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMahasiswa" />
 
-    <EditText
-        android:id="@+id/txtPass"
+    <Button
+        android:id="@+id/btnMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Name"
+        android:text="menu Mata Kuliah"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNimLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDosen" />
 </androidx.constraintlayout.widget.ConstraintLayout>

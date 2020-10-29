@@ -1,4 +1,4 @@
-package com.example.progmobtugas.Crud;
+package com.example.progmobtugas.CrudMhs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +19,7 @@ public class MainMhsActivity extends AppCompatActivity {
         Button btnGetMhs = (Button)findViewById(R.id.btnGetMhs);
         Button btnAddMhs = (Button)findViewById(R.id.btnAddMhs);
         Button btnDel = (Button)findViewById(R.id.btnDel);
-        Button btnUpdate = (Button)findViewById(R.id.btnUpdate);
+        //Button btnUpdate = (Button)findViewById(R.id.btnUpdate);
 
 
         btnGetMhs.setOnClickListener(new View.OnClickListener() {
@@ -46,12 +46,12 @@ public class MainMhsActivity extends AppCompatActivity {
             }
         });
 
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
+        /*btnUpdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainMhsActivity.this, MahasiswaUpdateActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
 }
