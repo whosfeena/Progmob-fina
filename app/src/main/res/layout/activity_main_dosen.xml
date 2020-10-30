@@ -6,53 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".CrudDosen.MainDosenActivity">
 
-    <Button
-        android:id="@+id/btnDelDosen"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="290dp"
-        android:text="hapus dosen"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#21C5B7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnAddDosen"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Tambah Dosen"
-        app:layout_constraintBottom_toTopOf="@+id/btnDelDosen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnGetDosen"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Lihat Dosen"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddDosen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtUpdate"
         android:layout_width="373dp"
         android:layout_height="67dp"
-        android:layout_marginTop="24dp"
-        android:text="**untuk update data dapat dilakukan dengan meng-klik data dosen secara langsung"
+        android:text="Untuk Update Data : Masuk ke menu Lihat Dosen --> Klik Pada Bagian Data yang ingin di Update"
         android:textAlignment="center"
         android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDelDosen" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDosenWelcome"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/txtDosenWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:text="SELAMAT DATANG DI HALAMAN DOSEN"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarDosen" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

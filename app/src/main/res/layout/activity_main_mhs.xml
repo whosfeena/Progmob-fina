@@ -10,51 +10,35 @@
         android:id="@+id/txtUpdateMhs"
         android:layout_width="373dp"
         android:layout_height="67dp"
-        android:layout_marginTop="24dp"
-        android:text="**untuk update data dapat dilakukan dengan meng-klik data dosen secara langsung"
+        android:text="Untuk Update Data : Masuk ke menu Lihat Mahasiswa  --> Klik Pada Bagian Data yang ingin di Update"
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGetMhs" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
-    <Button
-        android:id="@+id/btnGetMhs"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMhs"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="290dp"
-        android:text="Lihat Mahasiswa"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#21C5B7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnDel"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="HAPUS MAHASISWA"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGetMhs"
+        android:layout_marginTop="276dp"
+        android:text="SELAMAT DATANG DI HALAMAN MAHASISWA"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnAddMhs"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="TAMBAH DATA MAHASISWA"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnDel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMhs" />
 </androidx.constraintlayout.widget.ConstraintLayout>

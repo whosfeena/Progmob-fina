@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.progmobtugas.CrudDosen.MainDosenActivity;
+import com.example.progmobtugas.CrudDosen.DosenGetAllActivity;
 import com.example.progmobtugas.Model.Login;
 import com.example.progmobtugas.Network.GetDataService;
 import com.example.progmobtugas.Network.RetrofitClientInstance;
@@ -42,6 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         isLogin =pref.getString("isLogin","0");
         if(isLogin.equals("1")) {
             Intent intent = new Intent(LoginActivity.this, MenuUtamaActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
 
@@ -51,10 +52,6 @@ public class LoginActivity extends AppCompatActivity {
                 pd.setTitle("Logging In");
                 pd.show();
                 GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
-                /*Call<List<Login>> login = service.Login(
-                        txtNimLogin.getText().toString(),
-                        txtPass.getText().toString()
-                );*/
                 Call<List<Login>> login = service.Login(
                         txtNimLogin.getText().toString(),
                         txtPass.getText().toString()
@@ -69,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                             editor.commit();
                             pd.dismiss();
                             Intent intent = new Intent(LoginActivity.this, MenuUtamaActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                             Toast.makeText(LoginActivity.this, "success", Toast.LENGTH_LONG).show();
                         } else {

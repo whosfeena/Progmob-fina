@@ -10,41 +10,35 @@
         android:id="@+id/txtUpdateMatkul"
         android:layout_width="373dp"
         android:layout_height="67dp"
-        android:layout_marginTop="24dp"
-        android:text="**untuk update data dapat dilakukan dengan meng-klik data dosen secara langsung"
+        android:text="Untuk Update Data : Masuk ke menu Lihat Matakuliah  --> Klik Pada Bagian Data yang ingin di Update"
         android:textAlignment="center"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDelMatkul" />
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcomeMatkul" />
 
-    <Button
-        android:id="@+id/btnGetMatkul"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMatkul"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="LIHAT DATA MATAKULIAH"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddMatkul"
+        android:background="#21C5B7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnAddMatkul"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/txtWelcomeMatkul"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TAMBAH DATA MATAKULIAH"
-        app:layout_constraintBottom_toTopOf="@+id/btnDelMatkul"
+        android:layout_marginTop="276dp"
+        android:text="SELAMAT DATANG DI HALAMAN MATAKULIAH"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btnDelMatkul"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="290dp"
-        android:text="HAPUS DATA MATAKULIAH"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMatkul" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
