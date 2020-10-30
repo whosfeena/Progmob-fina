@@ -6,33 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MenuUtamaActivity">
 
-    <Button
-        android:id="@+id/btnMahasiswa"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="256dp"
-        android:text="Menu Mahasiswa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <Button
-        android:id="@+id/btnDosen"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="MENU DOSEN"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMahasiswa" />
-
-    <Button
-        android:id="@+id/btnMatkul"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="menu Mata Kuliah"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDosen" />
+    </GridView>
 </androidx.constraintlayout.widget.ConstraintLayout>
